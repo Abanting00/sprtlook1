@@ -1,0 +1,57 @@
+.navbar {
+	color: white;
+	font-size: 20px;
+	background-color: grey;
+	padding-top: 10px;
+}
+
+.nav {
+	list-style: none;
+	display: grid;
+  	grid-gap: 1em;
+  	grid-template-columns: repeat(10, 1fr);
+  	justify-items: center;
+  	align-items: center;
+}
+
+.logo {
+	grid-column: span 1;
+}
+
+.athletes {
+	margin-left: 20px;
+	grid-column-start: 2;
+}
+
+.coach {
+	grid-column-start: 3;
+}
+
+.login {
+	grid-column: span 2;
+	grid-column-end: -1;
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px 20px;
+	border-radius: 5px;
+	border-color: black;
+}
+
+li {
+	display: inline-block;
+}
+
+ img {
+ 	height: 60px;
+ 	width: 180px;
+ }
+
+ a:link, a:visited { 
+    color: white;
+    text-decoration: none;
+    cursor: content-menu;
+}
+
+a:link:active, a:visited:active { 
+    color: black;
+}

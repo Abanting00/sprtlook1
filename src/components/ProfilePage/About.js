@@ -12,7 +12,7 @@ class About extends Component {
 			born: this.props.data.born,
 			height: this.props.data.height,
 			nationality: this.props.data.nationality
-		} //
+		}
 	}
 
 	render() {

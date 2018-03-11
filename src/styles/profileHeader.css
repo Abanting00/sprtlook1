@@ -1,0 +1,39 @@
+/* CSS files for ProfileHeader.js and ProfileSearch.js */
+
+#profileHeader {
+  position: static;
+  background-color: black;
+  margin: 0px;
+  padding: 1px;
+}
+
+#profileHeader-logo {
+  width: 50px;
+  height: 100%;
+}
+
+#profileNav {
+  grid-template-columns: repeat(15, 1fr);
+  padding-right: 40px;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: row;
+  padding:0px;
+}
+
+#inputField {
+  flex: 1;
+  opacity: 1;
+  padding: 12px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+#inputButton {
+  border-radius: 0 10px 10px 0;
+  background: white;
+  color:grey;
+  border: none;
+}

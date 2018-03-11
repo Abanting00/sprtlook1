@@ -1,0 +1,33 @@
+#section-buttons {
+	color: black;
+	list-style: none;
+	display: grid;
+	grid-gap: 3em;
+	grid-template-columns: 1fr;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#section-buttons a:visited, #section-buttons a:link {
+	font-size: 15px;
+}
+
+#add-profile {
+	color: white;
+	background-color: #1DAA4F;
+	border: 1px #1DAA4F solid;
+	padding: 13px 0px 13px 10px;
+	display: inline-flex;
+    vertical-align: middle;
+    width: 92%;
+}
+
+#edit-profile {
+	color: black;
+	font-weight: bold;
+	border: 2px black solid;
+	display: inline-flex;
+    vertical-align: middle;
+    padding: 13px 0px 13px 10px;
+    width: 92%;
+}

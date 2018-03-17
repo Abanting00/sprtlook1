@@ -4,8 +4,8 @@
   z-index: 999;
   position: fixed;
   font-size: 16px;
-  width: 100%;
-  padding: 0px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+  width: 100%; 
 }
 
 .nav {
@@ -71,6 +71,10 @@ a:link:active, a:visited:active {
 @media only screen and (max-width: 600px) {
   .navbar {
     visibility: hidden;
+  }
+
+  .nav {
+    display: none;
   }
 } 
 

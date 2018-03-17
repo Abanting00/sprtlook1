@@ -37,3 +37,19 @@
   color:grey;
   border: none;
 }
+
+.icon4 {
+  grid-column-end: -1; 
+}
+
+.icon3 {
+  grid-column-end: 15; 
+}
+
+.icon2 {
+  grid-column-end: 14; 
+}
+
+.icon1 {
+  grid-column-end: 13; 
+}

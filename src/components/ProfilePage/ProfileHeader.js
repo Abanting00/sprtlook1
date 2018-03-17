@@ -14,15 +14,10 @@ class ProfileHeader extends Component {
 					<li><a href="#">Profile</a></li>
 					<li><a href="#">Events</a></li>
 					<li><a href="#">Jobs</a></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li><a href="#"><i className="material-icons">message</i></a></li>
-					<li><a href="#"><i className="material-icons">notifications</i></a></li>
-					<li><a href="#"><i className="material-icons">person_add</i></a></li>
-					<li><a href="#"><img id="profileHeader-logo" src={require('../../images/logo2x.png')}/></a></li>
+					<li className="icon1"><a href="#"><i className="material-icons">message</i></a></li>
+					<li className="icon2"><a href="#"><i className="material-icons">notifications</i></a></li>
+					<li className="icon3"><a href="#"><i className="material-icons">person_add</i></a></li>
+					<li className="icon4"><a href="#"><img id="profileHeader-logo" src={require('../../images/logo2x.png')}/></a></li>
 				</ul>
 			</div>
 		);

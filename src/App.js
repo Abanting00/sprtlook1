@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div id="Wrapper">
           <Router />
-          <Footer />
       </div>
     );
   }

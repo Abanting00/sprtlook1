@@ -3,6 +3,8 @@
   height: 100vh;
   grid-template-columns: 1fr 200px;
   grid-template-rows: 100px 3fr .5fr .5fr;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .slogan {
@@ -28,6 +30,7 @@
 
 .signup {
   padding-top: 20px;
+  padding-right: 60px;
   grid-column: -1;
   grid-row: 2/ span 2;
   align-self: top;
@@ -46,6 +49,7 @@
   .signup {
     display: none;
   }
+
 }
 
 /*

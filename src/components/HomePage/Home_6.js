@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles/home.css';
+import '../../styles/HomePage/home6.css';
 import Membership from './membership'
 
 class Home_6 extends Component {

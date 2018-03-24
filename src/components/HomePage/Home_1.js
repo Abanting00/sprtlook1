@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles/home.css';
+import '../../styles/HomePage/home1.css';
 import image from '../../images/collage .png';
 
 class Home_1 extends Component {

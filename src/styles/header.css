@@ -1,3 +1,38 @@
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .2s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: .8s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 .navbar {
   color: white;
   background-color: rgba(0,0,0,0.4);
@@ -5,28 +40,29 @@
   position: fixed;
   font-size: 16px;
   padding: 0px 0px 0px 0px;
-  width: 100%; 
+  width: 100vw;
+}
+
+.nav .icon {
+    display: none;
 }
 
 .nav {
   list-style: none;
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(11, 1fr);
-  justify-items: center;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 6fr;
   align-items: center; 
-}
-
-.logo {
-  grid-column: span 1;
+  overflow: auto;
 }
 
 .athletes {
-  margin-left: 50px;
-  padding-top: 6px;
   grid-column-start: 2;
+  padding-top: 6px;
   transition: color 0.1s;
+  justify-self: center;
 }
+
 
 li.athletes a:hover { color: #4D9FFE;}
 
@@ -39,14 +75,15 @@ li.athletes a:hover { color: #4D9FFE;}
  li.coach a:hover { color: #4D9FFE;}
 
 .login {
-  grid-column: span 2;
   grid-column-end: -1;
   border-style: solid;
   border-width: 2px;
   padding: 10px 20px;
+  margin-right: 6em;
   border-radius: 5px;
   border-color: white;
   transition: border-color 0.15s;
+  justify-self: right;   
 }
 
 .login:hover {
@@ -68,36 +105,19 @@ a:link:active, a:visited:active {
   color: black; }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar {
-    visibility: hidden;
+    background-color: black;
+  }
+  .nav li:not(:first-child) {display: none;}
+  
+  .nav li.mobile { 
+    padding-right: 2em;
+    grid-column: -1;
+    display: block;
   }
 
-  .nav {
-    display: none;
+  .nav a.icon {
+    display: block;
   }
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .nav {
-    grid-template-columns: repeat(5, 1fr);
-  }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .nav {
-    grid-template-columns: repeat(5, 1fr);
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .nav {
-    grid-template-columns: repeat(11, 1fr);
-  }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+}

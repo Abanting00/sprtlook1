@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {GoogleApiWrapper} from 'google-maps-react';
 import Map from './map_component';
-import '../../styles/home.css';
+import '../../styles/HomePage/home4.css';
 
 class Home_4 extends Component {
     render() {

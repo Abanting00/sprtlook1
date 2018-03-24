@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home_container from './HomePage/Home_container';
+import SignUp from './SignUp';
 import ProfileContainer from './ProfilePage/ProfileContainer';
 import SignIn from './SignIn';	
 import Footer from './Footer';
@@ -12,6 +13,7 @@ class Router extends Component {
 			    <Switch>
 		      		<Route exact path= "/" component={Home_container} />
 		      		<Route path = "/login" component={SignIn} />
+		      		<Route path = "/signup" component={SignUp} />
 		      		<Route path = "/profile" component={ProfileContainer} />
 		    	</Switch>
 		    </main>

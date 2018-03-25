@@ -7,34 +7,56 @@
 /*Main container*/
 
 .GetStarted {
-	padding: 100px;
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 1fr 6fr 1fr;
 }
 
 .GetStarted h1 {
 	font-weight: bold;
 	font-family: CircularStd-Book;
+	grid-column: 2;
+	grid-row: 1;
 }
 
 
 /*First child container*/
 
 .GetStarted-Container {
-	padding: 40px 50px 10px 50px;
-	width: 80%;
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column: 2;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	padding: 10px 30px 0px 30px;
 	font-family: CircularStd-Book;
 }
 
-
 /*Left side Image Slider*/
 
-.GetStarted-ImageSlider {
+.ImageSlider {
 	width: 660px;
 	height: 500px;
-	float: left;
-	background-image: url('img1.PNG')
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
+.ImageButtons {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.ImageButtons button {
+	width: 8px;
+	height: 8px;
+	padding: 0;
+	margin: 10px;
+	border-radius: 50%;
+}
 
 /*Right side form Container*/
 
@@ -44,7 +66,6 @@
 	background-color: white;
 	display: inline-block;
 }
-
 
 /*Information and Finalize selectors*/
 
@@ -200,4 +221,37 @@
 	background-color: #32AF44;
 	font-size: 11px;
 	font-family: CircularStd-Book;
+}
+
+/**** Mobile responsiveness - above css control this ****/
+/* Extra small devices (portrait tablets and large phones, 321px and up) */
+@media only screen and (max-width: 570px) {
+	.GetStarted {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 6fr 1fr;
+	}
+	.GetStarted-Container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.1fr 1fr;
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
+		font-family: CircularStd-Book;
+	}
+	.ImageSlider {
+		width: 100%;
+		height: 75vw;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.GetStarted-Forms {
+		grid-column: 1;
+		width: auto;
+		height: 100%;
+		background-color: white;
+		display: inline-block;
+	}
 }

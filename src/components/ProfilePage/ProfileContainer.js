@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import About from './About';
+import Team from './Team';
 import ProfileHeader from './ProfileHeader';
 import Profile_Banner from './Profile_Banner';
 import Profile_RightSection from './Profile_RightSection';
@@ -30,6 +31,7 @@ class ProfileContainer extends Component {
 					<div className="Profile_MainComponents">
 						<Profile_Banner data={dummyData2} />
 						<About data={dummyData}/>
+						<Team />
 					</div>
 					<div className="Profile_RightComponent">
 						<Profile_RightSection />

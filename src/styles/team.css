@@ -1,0 +1,40 @@
+#edit-button {
+    color: black;
+}
+
+.team-item1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.team-item2 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.team-item3 {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.team-item4 {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+}
+
+.team-imgs {
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    grid-column-gap: 10px;
+    grid-row: 15px;
+}
+
+.team-imgs, img {
+    width: auto;
+    height: auto;
+}

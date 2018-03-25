@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FinalizeForm from './FinalizeForm.js';
 import ImageSlider from './ImageSlider.js';
 import InformationForm from './InformationForm.js';
+import ProfileHeader from '../ProfilePage/ProfileHeader';
 import './GetStarted.css';
 
 
@@ -34,25 +35,28 @@ class GetStarted extends Component {
 
 	render() {
 		return (
-			<div className="GetStarted">
-				<h1>Get Started</h1>
-				<div className="GetStarted-Container">
-					<ImageSlider />
-					<div className="GetStarted-Forms">
-						{ this.state.currentForm === 'information' && (
-							<div className="GetStarted-FormSelector">
-								<a style={formSelection}>Information</a>
-								<a onClick={this.handleClick}>Finalize</a>
-							</div>
-						)}
-						{ this.state.currentForm === 'finalize' && (
-							<div className="GetStarted-FormSelector">
-								<a onClick={this.handleClick}>Information</a>
-								<a style={formSelection}>Finalize</a>
-							</div>
-						)}
-						{ this.state.currentForm === 'information' && (<InformationForm />)}
-						{ this.state.currentForm === 'finalize' && (<FinalizeForm />)}
+			<div>
+				<ProfileHeader />
+				<div className="GetStarted">
+					<h1>Get Started</h1>
+					<div className="GetStarted-Container">
+						<ImageSlider />
+						<div className="GetStarted-Forms">
+							{ this.state.currentForm === 'information' && (
+								<div className="GetStarted-FormSelector">
+									<a style={formSelection}>Information</a>
+									<a onClick={this.handleClick}>Finalize</a>
+								</div>
+							)}
+							{ this.state.currentForm === 'finalize' && (
+								<div className="GetStarted-FormSelector">
+									<a onClick={this.handleClick}>Information</a>
+									<a style={formSelection}>Finalize</a>
+								</div>
+							)}
+							{ this.state.currentForm === 'information' && (<InformationForm />)}
+							{ this.state.currentForm === 'finalize' && (<FinalizeForm />)}
+						</div>
 					</div>
 				</div>
 			</div>

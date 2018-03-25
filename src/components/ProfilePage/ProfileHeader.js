@@ -12,7 +12,7 @@ class ProfileHeader extends Component {
 					<li id="profileSearchField"><ProfileSearch /></li>
 					<li className=""><a href="/">Home</a></li>
 					<li className=""><a href="#">Profile</a></li>
-					<li className="icon1"><a href="#">Events</a></li>
+					<li className=""><a href="#">Events</a></li>
 					<li><a href="#">Jobs</a></li>
 					<li className="icon1"><a href="#"><i className="material-icons">message</i></a></li>
 					<li className="icon2"><a href="#"><i className="material-icons">notifications</i></a></li>

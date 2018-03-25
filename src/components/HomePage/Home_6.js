@@ -18,6 +18,7 @@ class Home_6 extends Component {
 						price="30.00" 
 						contract = "3-month contract"/> 
 				</div>
+				<span className="test"></span>
 			</div>
 		);
 	}

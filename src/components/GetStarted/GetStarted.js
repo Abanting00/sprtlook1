@@ -37,9 +37,7 @@ class GetStarted extends Component {
 			<div className="GetStarted">
 				<h1>Get Started</h1>
 				<div className="GetStarted-Container">
-					<div className="GetStarted-ImageSlider">
-						<ImageSlider />
-					</div>
+					<ImageSlider />
 					<div className="GetStarted-Forms">
 						{ this.state.currentForm === 'information' && (
 							<div className="GetStarted-FormSelector">

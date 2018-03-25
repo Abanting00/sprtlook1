@@ -3,6 +3,25 @@ import './GetStarted.css';
 
 
 class InformationForm extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			sport: "",
+			position: "",
+			hometown: "",
+			nationality: "",
+			curr_team: "",
+			curr_pos: "",
+			school: "",
+			class: "",
+			birth: "",
+			height: {
+				ft: "",
+				in: ""
+			}
+		}
+	}
+
 	render() {
 		return (
 			<div className="InformationForm">
